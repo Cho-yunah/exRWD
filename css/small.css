@@ -13,17 +13,44 @@ body {
 /* 모바일 헤더 */
 .appHeader {
   background-color: silver;
+  grid-template: auto/ 1fr;
+  background-color: #38302e;
   /* position: relative; */
-  
 }
+/* 모바일 브랜드 */
+.brand, .memberOnly, .searchForm {
+  padding: 10px 20px;
+}
+
+.brand * {
+  display: block;
+}
+.brand {
+}
+/* 모바일 멤버 링크 */
 .memberOnly {
-  /* position: absolute;
-  top: 0;
-  right: 0; */
+  order: -1;
+  background-color: #988574;
+  color: #fff;
+  /* display: flex;
+  flex-flow: row nowrap; */
 }
 .memberOnly li{
-  /* display: inline-block; */
-
+}
+/* 모바일 검색폼 */
+input[type="search"]{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
+  width: calc(100% - 45px);
+  margin-right: 5px;
+}
+.buttonSearch {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  padding:0;
 }
 /* 모바일 네비게이션 */
 .appNavigation {
