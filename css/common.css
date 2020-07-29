@@ -229,14 +229,11 @@ input[type="search"]{
   padding: 2px 5px;
   height: 35px;
 }
-/* 공통 네비게이션 */
-.appNavigation {
-  background-color: purple;
-}
 /* 공통 메인 콘텐츠 */
 .appMain {
   background-color: lime;
 }
+
 /* 공통 푸터 */
 .appFooter {
   background-color: orange;
