@@ -7,7 +7,7 @@ function demoWebCafeUI() {
   var isSlideIn = false;
   var breakpoint = 999;
   // DOM 노드 참조 변수
-  var appNavigation = null;
+  var appNavigation = null; 
   var buttonBurger = null;
   var menuList = null;
   var menuListItems = null;
@@ -180,7 +180,7 @@ function demoWebCafeUI() {
       // 설정
       item.classList.add('icon-star');
       link.addEventListener('click', handlePreventBrowserAction);
-      link.setAttribute('role', 'presentation');
+      link.setAttribute('role', 'none');
       link.removeAttribute('aria-haspopup');
       link.removeAttribute('aria-pressed');
       link.removeAttribute('aria-expanded');
