@@ -71,7 +71,6 @@ input[type="search"]{
 .buttonBurger {
   width: 35px;
   height: 35px;
-  background-color: blue;
   position: absolute;
   top: 60px;
   right: 20px;
@@ -87,7 +86,6 @@ input[type="search"]{
 }
 .round {
   border-radius: 20px;
-
 }
 .positionTop {
   top: 0;
@@ -120,8 +118,44 @@ input[type="search"]{
   width: 70vw;
   height: 100vh;
   /* 모바일에서는 vw,vh 단위를 사용한다. */
-  transform: translateX(-100%);
+  transform: translateX(-105%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 20px;
 }
+
+/* .menu__item {
+ display: flex;
+ flex-flow: row wrap;
+} */
+
+.menu__link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% - 1.5em);
+}
+.menu__subMenu {
+  display: none;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.menu__subMenu li{
+  margin: 10px 0;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 5px 0;
+}
+.menuAct .menu__subMenu {
+  display: block;
+}
+.isAct .menu__list {
+  transform: none;
+}
+
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
