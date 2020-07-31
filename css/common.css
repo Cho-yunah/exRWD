@@ -379,8 +379,50 @@ input[type="search"]{
 } */
 .book__summary {
   line-height: 1.7rem;
-
 }
+/* 공통 새소식 */
+video.responsive {
+  width: 100%;
+}
+.news__videoContainer {
+  margin: 15px 20px;
+}
+/* 공통 새소식-iframe */
+.iframeContainer {
+  width: 100%;
+  height: 0 !important;
+  position: relative;
+}
+.iframe16To9{
+  padding-top: 56.25%;
+}
+.iframe4To3{
+  padding-top: 75%;
+}
+.iframe21To9{
+  padding-top: 42.857142857142855%;
+}
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.news__summary{
+  text-align: justify;
+}
+.news__date {
+  display: block;
+  text-align: right;
+  margin: 1em 0;
+  /* float: right; */
+}
+/* .news__date::after {
+  content: "";
+  display: block;
+  clear: both;
+} 플로트 방식은 clear 해야 하는 추가 작업이 더 필요하므로 더 간단한 방법을 찾으면 좋다.==> date를 block 박스로 바꿔서 text-align속성을 적용한다.*/
 /* 공통 푸터 */
 .appFooter {
   background-color: orange;
