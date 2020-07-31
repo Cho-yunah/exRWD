@@ -162,7 +162,7 @@ input[type="search"]{
   flex-flow: row wrap;
   padding: 10px 20px;
 }
-.book, .news, .board, .favorite, .twiter {
+.book, .news, .board, .favorite, .twitter {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -171,8 +171,14 @@ input[type="search"]{
 .favorite__list li a:hover::after, .favorite__list li a:hover::after {
   left: 10em;
 }
-
+/* 모바일 트위터 */
+.twitter__userProfile {
+  text-align: right;
+}
 /* 모바일 푸터 */
 .appFooter {
-  background-color: orange;
+ line-height: 2;
+}
+.address span {
+  display: block;
 }
